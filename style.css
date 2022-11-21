@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(270px, 1fr));
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-left: 30px;
+    background-color: rgb(43, 152, 219);
+}
+
+.name-div {
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.name-div .name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu-item {
+    font-size: 20px;
+}
+
+.settings {
+    margin-top: 40px;
+}
+
+.main-container {
+    grid-column: 2 / 6;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-header {
+    height: 180px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.422);
+}
+
+.main {
+    flex: auto;
+    background-color: rgb(184, 184, 184);
+    
+}
+
+.navigation-div {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    padding: 15px 35px;
+}
+
+.navigation-div input {
+    flex: auto;
+    font-size: 20px;
+    background-color: rgb(203, 251, 235);
+    border-radius: 20px;
+    padding: 2px 10px;
+    margin-right: 120px;
+}
+
+.navigation-div div {
+    font-size: 20px;
+    margin: 0px 15px;
+}
